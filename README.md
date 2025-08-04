@@ -1,17 +1,50 @@
 # 🎬 Movie Recommendation System
 
-This is a simple yet powerful Movie Recommendation System built using **Content-Based Filtering** with **TF-IDF** and **cosine similarity** on movie overviews.  
-Users can enter a movie title and receive 10 similar movie recommendations.
+This project is a simple and effective Movie Recommendation System built using **Content-Based Filtering**. It uses **TF-IDF vectorization** and **cosine similarity** to recommend similar movies based on the overview description.
 
 ---
 
-## 🌐 Live Demo
+## 💡 How It Works
 
-👉 [Click here to open the app on Streamlit](https://YOUR-STREAMLIT-LINK-HERE)  
-*(Replace this with your actual deployed link)*
+- Extracts textual information (overview) from the movie dataset
+- Applies TF-IDF to convert text to numerical vectors
+- Computes similarity using cosine distance
+- Recommends the top 10 most similar movies
 
 ---
 
-## 📁 Dataset
+## 🧾 Dataset Used
 
-The project uses a subset of the [Kaggle "The Movies Dataset"](https://www.kagg)
+The project uses files extracted from a public movie dataset:
+- `movies_metadata.csv` — contains movie title, genres, overview, etc.
+- `ratings_small.csv` — reserved for future collaborative filtering
+
+---
+
+## ⚙️ Features
+
+- Recommend similar movies based on content
+- Fast, interactive interface using Streamlit
+- Lightweight and easy to deploy
+
+---
+
+## 🧪 Example Input
+
+Movie Entered: **The Matrix**
+
+Recommended Movies:
+1. The Matrix Reloaded  
+2. Inception  
+3. Blade Runner  
+4. Total Recall  
+5. Interstellar  
+... and more
+
+---
+
+## 🧰 How to Run the Project Locally
+
+1. Clone the project folder
+2. Make sure Python and pip are installed
+3. Install dependencies using:
